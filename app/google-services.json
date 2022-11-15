@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "620782795812",
+    "project_id": "arbitrosapp-6b35a",
+    "storage_bucket": "arbitrosapp-6b35a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620782795812:android:fde4a5b1daca9cd955acb1",
+        "android_client_info": {
+          "package_name": "com.franlinares.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "620782795812-vdjg556ogmkdcjm03hjlrn2qltge9crb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcQSuomjGgX2pd9Y4-CPLPvwNDS7Ft5ns"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "620782795812-vdjg556ogmkdcjm03hjlrn2qltge9crb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtENombre"
+        android:layout_width="200sp"
+        android:layout_height="match_parent"
+        android:text="Nombre" />
+
+    <TextView
+        android:id="@+id/txtEDorsal"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Dorsal" />
+
+    <TextView
+        android:id="@+id/txtEPuntos"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Puntos" />
+
+    <TextView
+        android:id="@+id/txtETC2P"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="TC 2P" />
+
+    <TextView
+        android:id="@+id/txtETC3P"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="TC 3P" />
+
+    <TextView
+        android:id="@+id/txtETL"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="TL" />
+
+    <TextView
+        android:id="@+id/txtERebO"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="REB OFE" />
+
+    <TextView
+        android:id="@+id/txtERebD"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="REB DEF" />
+
+    <TextView
+        android:id="@+id/txtEAsi"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="ASI" />
+
+    <TextView
+        android:id="@+id/txtERec"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="REC" />
+
+    <TextView
+        android:id="@+id/txtEPer"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="PÉR" />
+
+    <TextView
+        android:id="@+id/txtETapC"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="TAP COM" />
+
+    <TextView
+        android:id="@+id/txtETapR"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="TAP REC" />
+
+    <TextView
+        android:id="@+id/txtEFal"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="FAL" />
+
+    <TextView
+        android:id="@+id/txtEVal"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="VAL" />
+</TableRow>

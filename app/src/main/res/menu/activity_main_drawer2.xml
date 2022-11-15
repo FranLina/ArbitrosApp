@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/homeFragmentAdmin"
+            android:icon="@drawable/hogar"
+            android:title="Inicio" />
+
+        <item android:title="Mantenimiento">
+            <menu>
+                <item
+                    android:id="@+id/arbitrosFragment"
+                    android:icon="@drawable/designacion"
+                    android:title="Árbitros" />
+
+                <item
+                    android:id="@+id/jugadoresFragment"
+                    android:icon="@drawable/jugador_de_baloncesto"
+                    android:title="Jugadores" />
+
+                <item
+                    android:id="@+id/equiposFragment"
+                    android:icon="@drawable/jugadores_de_baloncesto"
+                    android:title="Equipos" />
+
+                <item
+                    android:id="@+id/ligasFragment"
+                    android:icon="@drawable/trofeo"
+                    android:title="Ligas" />
+
+                <item
+                    android:id="@+id/designacionPartidoFragment"
+                    android:icon="@drawable/marcador"
+                    android:title="Designaciones" />
+            </menu>
+        </item>
+
+        <item android:title="Personal">
+            <menu>
+
+                <item
+                    android:id="@+id/datosPersonalesFragment2"
+                    android:icon="@drawable/camiseta"
+                    android:title="Datos Personales" />
+
+                <item
+                    android:id="@+id/configuracionFragment2"
+                    android:icon="@drawable/configuraciones"
+                    android:title="Configuración" />
+            </menu>
+        </item>
+
+
+        <!--<item android:title="Sesión">
+            <menu>
+                <item
+                    android:id="@+id/loginActivity2"
+                    android:icon="@drawable/puerta"
+                    android:title="Cerrar Sesión" />
+            </menu>
+        </item>-->
+    </group>
+</menu>

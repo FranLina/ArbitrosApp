@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/hogar"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/designacionFragment"
+            android:icon="@drawable/designacion"
+            android:title="Designaciones" />
+        <item
+            android:id="@+id/datosPersonalesFragment"
+            android:icon="@drawable/camiseta"
+            android:title="Datos Personales" />
+        <item
+            android:id="@+id/configuracionFragment"
+            android:icon="@drawable/configuraciones"
+            android:title="Configuración" />
+        <!--<item
+            android:id="@+id/loginActivity"
+            android:icon="@drawable/puerta"
+            android:title="Cerrar Sesión" />-->
+    </group>
+</menu>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.franlinares.app">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_baloncesto"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_baloncesto"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ArbitrosApp">
+        <activity
+            android:name=".Estadisticas.CargaPartidoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false" />
+        <activity
+            android:name=".Estadisticas.MainActivity3"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false"
+            android:label="@string/title_activity_main3"
+            android:theme="@style/Theme.ArbitrosApp.NoActionBar" />
+        <activity
+            android:name=".admin.MainActivity2"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/Theme.ArbitrosApp.NoActionBar" />
+        <activity
+            android:name=".CambioPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".user.MainActivity"
+            android:exported="true"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.ArbitrosApp.NoActionBar" />
+    </application>
+
+</manifest>

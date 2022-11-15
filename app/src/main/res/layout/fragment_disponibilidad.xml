@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3A3A3A"
+    tools:context=".user.DisponibilidadFragment">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo_pantalla3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="700dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:orientation="horizontal"
+                            tools:ignore="MissingConstraints">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txtEspacio"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtEspacio2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtViernes"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Viernes"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtSabado"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Sabado"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtDomingo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Domingo"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtLunes"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lunes"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtMartes"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Martes"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtMiercoles"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Miércoles"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtJueves"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Jueves"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtCoche"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Coche"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txtMañana"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Mañana"
+                                    android:textAlignment="center"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtMañana2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="08:00 a 14:45"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <Switch
+                                    android:id="@+id/ViernesM"
+                                    android:layout_width="75dp"
+                                    android:layout_height="wrap_content" />
+
+                                <Switch
+                                    android:id="@+id/SabadoM"
+                                    android:layout_width="75dp"
+                                    android:layout_height="wrap_content" />
+
+                                <Switch
+                                    android:id="@+id/DomingoM"
+                                    android:layout_width="75dp"
+                                    android:layout_height="wrap_content" />
+
+                                <Switch
+                                    android:id="@+id/LunesM"
+                                    android:layout_width="75dp"
+                                    android:layout_height="wrap_content" />
+
+                                <Switch
+                                    android:id="@+id/MartesM"
+                                    android:layout_width="75dp"
+                                    android:layout_height="wrap_content" />
+
+                                <Switch
+                                    android:id="@+id/MiercolesM"
+                                    android:layout_width="75dp"
+                                    android:layout_height="wrap_content" />
+
+                                <Switch
+                                    android:id="@+id/JuevesM"
+                                    android:layout_width="75dp"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txtTarde"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tarde"
+                                    android:textAlignment="center"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtTarde2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="  15:00 a 22:00"
+                                    android:textColor="#3A3A3A"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <Switch
+                                    android:id="@+id/ViernesT"
+                                    android:layout_width="85dp"
+                                    android:layout_height="wrap_content" />
+
+                                <Switch
+                                    android:id="@+id/SabadoT"
+                                    android:layout_width="85dp"
+                                    android:layout_height="wrap_content" />
+
+                                <Switch
+                                    android:id="@+id/DomingoT"
+                                    android:layout_width="85dp"
+                                    android:layout_height="wrap_content" />
+
+                                <Switch
+                                    android:id="@+id/LunesT"
+                                    android:layout_width="85dp"
+                                    android:layout_height="wrap_content" />
+
+                                <Switch
+                                    android:id="@+id/MartesT"
+                                    android:layout_width="85dp"
+                                    android:layout_height="wrap_content" />
+
+                                <Switch
+                                    android:id="@+id/MiercolesT"
+                                    android:layout_width="85dp"
+                                    android:layout_height="wrap_content" />
+
+                                <Switch
+                                    android:id="@+id/JuevesT"
+                                    android:layout_width="85dp"
+                                    android:layout_height="wrap_content" />
+
+                                <Switch
+                                    android:id="@+id/SwitchCoche"
+                                    android:layout_width="85dp"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/txtObservacion"
+                            android:layout_width="320sp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:backgroundTint="#4BFF09"
+                            android:gravity="bottom"
+                            android:hint="Observaciones"
+                            android:inputType="text|textMultiLine"
+                            android:textColor="#000000"
+                            android:textColorHint="#3A3A3A"
+                            android:textSize="24sp"
+                            tools:ignore="MissingConstraints"
+                            tools:layout_editor_absoluteX="45dp"
+                            tools:layout_editor_absoluteY="414dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="horizontal">
+
+                            <Space
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <Button
+                                android:id="@+id/btnGuardar"
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#3A3A3A"
+                                android:text="Guardar"
+                                android:textColor="#FFFFFF"
+                                tools:layout_editor_absoluteX="56dp"
+                                tools:layout_editor_absoluteY="426dp"
+                                app:cornerRadius="30dp"/>
+
+                            <Space
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

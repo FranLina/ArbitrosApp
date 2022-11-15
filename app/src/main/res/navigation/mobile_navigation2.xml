@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@id/homeFragmentAdmin">
+    <fragment
+        android:id="@+id/homeFragmentAdmin"
+        android:name="com.franlinares.app.admin.HomeFragmentAdmin"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_home_admin">
+        <action
+            android:id="@+id/action_homeFragmentAdmin_to_datosPersonalesFragment2"
+            app:destination="@id/datosPersonalesFragment2" />
+        <action
+            android:id="@+id/action_homeFragmentAdmin_to_configuracionFragment2"
+            app:destination="@id/configuracionFragment2" />
+        <action
+            android:id="@+id/action_homeFragmentAdmin_to_cambioPasswordActivity2"
+            app:destination="@id/cambioPasswordActivity2" />
+        <action
+            android:id="@+id/action_homeFragmentAdmin_to_loginActivity2"
+            app:destination="@id/loginActivity2" />
+        <action
+            android:id="@+id/action_homeFragmentAdmin_to_arbitrosFragment"
+            app:destination="@id/arbitrosFragment" />
+        <action
+            android:id="@+id/action_homeFragmentAdmin_to_jugadoresFragment"
+            app:destination="@id/jugadoresFragment" />
+        <action
+            android:id="@+id/action_homeFragmentAdmin_to_equiposFragment"
+            app:destination="@id/equiposFragment" />
+        <action
+            android:id="@+id/action_homeFragmentAdmin_to_ligasFragment"
+            app:destination="@id/ligasFragment" />
+        <action
+            android:id="@+id/action_homeFragmentAdmin_to_designacionPartidoFragment"
+            app:destination="@id/designacionPartidoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/datosPersonalesFragment2"
+        android:name="com.franlinares.app.user.DatosPersonalesFragment"
+        android:label="Datos Personales"
+        tools:layout="@layout/fragment_datos_personales" />
+    <fragment
+        android:id="@+id/configuracionFragment2"
+        android:name="com.franlinares.app.user.ConfiguracionFragment"
+        android:label="Configuración"
+        tools:layout="@layout/fragment_configuracion" />
+    <activity
+        android:id="@+id/cambioPasswordActivity2"
+        android:name="com.franlinares.app.CambioPasswordActivity"
+        android:label="Cambio Password"
+        tools:layout="@layout/activity_cambio_password" />
+    <activity
+        android:id="@+id/loginActivity2"
+        android:name="com.franlinares.app.LoginActivity"
+        android:label="Login"
+        tools:layout="@layout/activity__login" />
+    <fragment
+        android:id="@+id/arbitrosFragment"
+        android:name="com.franlinares.app.admin.ArbitrosFragment"
+        android:label="Árbiros"
+        tools:layout="@layout/fragment_arbitros" >
+        <action
+            android:id="@+id/action_arbitrosFragment_to_crearArbitroFragment"
+            app:destination="@id/crearArbitroFragment" />
+        <action
+            android:id="@+id/action_arbitrosFragment_to_borrarArbitroFragment"
+            app:destination="@id/borrarArbitroFragment" />
+        <action
+            android:id="@+id/action_arbitrosFragment_to_consultarArbitroFragment"
+            app:destination="@id/consultarArbitroFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/equiposFragment"
+        android:name="com.franlinares.app.admin.EquiposFragment"
+        android:label="Equipos"
+        tools:layout="@layout/fragment_equipos" >
+        <action
+            android:id="@+id/action_equiposFragment_to_crearEquipoFragment"
+            app:destination="@id/crearEquipoFragment" />
+        <action
+            android:id="@+id/action_equiposFragment_to_consultarEquipoFragment"
+            app:destination="@id/consultarEquipoFragment" />
+        <action
+            android:id="@+id/action_equiposFragment_to_agregarEquipoLigaFragment"
+            app:destination="@id/agregarEquipoLigaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/jugadoresFragment"
+        android:name="com.franlinares.app.admin.JugadoresFragment"
+        android:label="Jugadores"
+        tools:layout="@layout/fragment_jugadores" >
+        <action
+            android:id="@+id/action_jugadoresFragment_to_crearJugadorFragment"
+            app:destination="@id/crearJugadorFragment" />
+        <action
+            android:id="@+id/action_jugadoresFragment_to_consultarJugadorFragment"
+            app:destination="@id/consultarJugadorFragment" />
+        <action
+            android:id="@+id/action_jugadoresFragment_to_agregarJugadorEquipoFragment"
+            app:destination="@id/agregarJugadorEquipoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ligasFragment"
+        android:name="com.franlinares.app.admin.LigasFragment"
+        android:label="Ligas"
+        tools:layout="@layout/fragment_ligas" >
+        <action
+            android:id="@+id/action_ligasFragment_to_clearLigaFragment"
+            app:destination="@id/clearLigaFragment" />
+        <action
+            android:id="@+id/action_ligasFragment_to_consultarLigaFragment"
+            app:destination="@id/consultarLigaFragment" />
+        <action
+            android:id="@+id/action_ligasFragment_to_iniciarLigaFragment"
+            app:destination="@id/iniciarLigaFragment" />
+        <action
+            android:id="@+id/action_ligasFragment_to_designacionPartidoFragment"
+            app:destination="@id/designacionPartidoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/clearLigaFragment"
+        android:name="com.franlinares.app.Liga.CrearLigaFragment"
+        android:label="Crear Liga"
+        tools:layout="@layout/fragment_crear_liga" />
+    <fragment
+        android:id="@+id/consultarLigaFragment"
+        android:name="com.franlinares.app.Liga.ConsultarLigaFragment"
+        android:label="Consultar Liga"
+        tools:layout="@layout/fragment_consultar_liga" >
+        <action
+            android:id="@+id/action_consultarLigaFragment_to_gestionarJornadaLigaFragment"
+            app:destination="@id/gestionarJornadaLigaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/crearEquipoFragment"
+        android:name="com.franlinares.app.Equipo.CrearEquipoFragment"
+        android:label="Crear Equipo"
+        tools:layout="@layout/fragment_crear_equipo" />
+    <fragment
+        android:id="@+id/consultarEquipoFragment"
+        android:name="com.franlinares.app.Equipo.ConsultarEquipoFragment"
+        android:label="Consultar Equipos"
+        tools:layout="@layout/fragment_consultar_equipo" />
+    <fragment
+        android:id="@+id/agregarEquipoLigaFragment"
+        android:name="com.franlinares.app.Equipo.AgregarEquipoLigaFragment"
+        android:label="Agregar Equipo"
+        tools:layout="@layout/fragment_agregar_equipo_liga" />
+    <fragment
+        android:id="@+id/crearJugadorFragment"
+        android:name="com.franlinares.app.Jugador.CrearJugadorFragment"
+        android:label="Crear Jugador" />
+    <fragment
+        android:id="@+id/consultarJugadorFragment"
+        android:name="com.franlinares.app.Jugador.ConsultarJugadorFragment"
+        android:label="Consultar Jugador"
+        tools:layout="@layout/fragment_consultar_jugador" />
+    <fragment
+        android:id="@+id/agregarJugadorEquipoFragment"
+        android:name="com.franlinares.app.Jugador.AgregarJugadorEquipoFragment"
+        android:label="Agregar Jugador"
+        tools:layout="@layout/fragment_agregar_jugador_equipo" />
+    <fragment
+        android:id="@+id/iniciarLigaFragment"
+        android:name="com.franlinares.app.Liga.IniciarLigaFragment"
+        android:label="Iniciar Liga"
+        tools:layout="@layout/fragment_iniciar_liga" />
+    <fragment
+        android:id="@+id/gestionarJornadaLigaFragment"
+        android:name="com.franlinares.app.Liga.GestionarJornadaLigaFragment"
+        android:label="Gestionar Jornadas Liga"
+        tools:layout="@layout/fragment_gestionar_jornada_liga" >
+        <action
+            android:id="@+id/action_gestionarJornadaLigaFragment_to_editarPartidoJornadaFragment"
+            app:destination="@id/editarPartidoJornadaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editarPartidoJornadaFragment"
+        android:name="com.franlinares.app.Liga.EditarPartidoJornadaFragment"
+        android:label="Editar Partido"
+        tools:layout="@layout/fragment_editar_partido_jornada" >
+        <action
+            android:id="@+id/action_editarPartidoJornadaFragment_to_gestionarJornadaLigaFragment"
+            app:destination="@id/gestionarJornadaLigaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/designacionPartidoFragment"
+        android:name="com.franlinares.app.Liga.DesignacionPartidoFragment"
+        android:label="Designacion Partido"
+        tools:layout="@layout/fragment_designacion_partido" >
+        <action
+            android:id="@+id/action_designacionPartidoFragment_to_designarArbitrosPartidoFragment"
+            app:destination="@id/designarArbitrosPartidoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/designarArbitrosPartidoFragment"
+        android:name="com.franlinares.app.Liga.DesignarArbitrosPartidoFragment"
+        android:label="Designar Árbitros"
+        tools:layout="@layout/fragment_designar_arbitros_partido" />
+    <fragment
+        android:id="@+id/borrarArbitroFragment"
+        android:name="com.franlinares.app.Arbitros.BorrarArbitroFragment"
+        android:label="fragment_borrar_arbitro"
+        tools:layout="@layout/fragment_borrar_arbitro" />
+    <fragment
+        android:id="@+id/crearArbitroFragment"
+        android:name="com.franlinares.app.Arbitros.CrearArbitroFragment"
+        android:label="Crear Árbitro"
+        tools:layout="@layout/fragment_crear_arbitro" />
+    <fragment
+        android:id="@+id/consultarArbitroFragment"
+        android:name="com.franlinares.app.Arbitros.ConsultarArbitroFragment"
+        android:label="fragment_consultar_arbitro"
+        tools:layout="@layout/fragment_consultar_arbitro" />
+</navigation>

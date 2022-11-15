@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.franlinares.app.user.HomeFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_nav_home_to_configuracionFragment"
+            app:destination="@id/configuracionFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_datosPersonalesFragment"
+            app:destination="@id/datosPersonalesFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_disponibilidadFragment"
+            app:destination="@id/disponibilidadFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_designacionFragment"
+            app:destination="@id/designacionFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_loginActivity"
+            app:destination="@id/loginActivity" />
+        <action
+            android:id="@+id/action_nav_home_to_cambioPasswordActivity"
+            app:destination="@id/cambioPasswordActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/disponibilidadFragment"
+        android:name="com.franlinares.app.user.DisponibilidadFragment"
+        android:label="Disponibilidad"
+        tools:layout="@layout/fragment_disponibilidad" />
+    <fragment
+        android:id="@+id/configuracionFragment"
+        android:name="com.franlinares.app.user.ConfiguracionFragment"
+        android:label="Configuración"
+        tools:layout="@layout/fragment_configuracion" />
+    <fragment
+        android:id="@+id/datosPersonalesFragment"
+        android:name="com.franlinares.app.user.DatosPersonalesFragment"
+        android:label="Datos Personales"
+        tools:layout="@layout/fragment_datos_personales" />
+    <fragment
+        android:id="@+id/designacionFragment"
+        android:name="com.franlinares.app.user.DesignacionFragment"
+        android:label="Designación"
+        tools:layout="@layout/fragment_designacion" >
+        <action
+            android:id="@+id/action_designacionFragment_to_cargaPlantillasFragment"
+            app:destination="@id/cargaPlantillasFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.franlinares.app.LoginActivity"
+        android:label="Login"
+        tools:layout="@layout/activity__login" />
+    <activity
+        android:id="@+id/cambioPasswordActivity"
+        android:name="com.franlinares.app.CambioPasswordActivity"
+        android:label="Cambio Password"
+        tools:layout="@layout/activity_cambio_password" />
+    <fragment
+        android:id="@+id/cargaPlantillasFragment"
+        android:name="com.franlinares.app.Partido.CargaPlantillasFragment"
+        android:label="Plantillas"
+        tools:layout="@layout/fragment_carga_plantillas" >
+        <action
+            android:id="@+id/action_cargaPlantillasFragment_to_plantillaLocalFragment"
+            app:destination="@id/plantillaLocalFragment" />
+        <action
+            android:id="@+id/action_cargaPlantillasFragment_to_datosPartidosFragment"
+            app:destination="@id/datosPartidosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/plantillaLocalFragment"
+        android:name="com.franlinares.app.Partido.PlantillaLocalFragment"
+        android:label="Plantilla Local"
+        tools:layout="@layout/fragment_plantilla_local" >
+        <action
+            android:id="@+id/action_plantillaLocalFragment_to_plantillaVisitanteFragment"
+            app:destination="@id/plantillaVisitanteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/plantillaVisitanteFragment"
+        android:name="com.franlinares.app.Partido.PlantillaVisitanteFragment"
+        android:label="Plantilla Visitante"
+        tools:layout="@layout/fragment_plantilla_visitante" >
+        <action
+            android:id="@+id/action_plantillaVisitanteFragment_to_cargaPlantillasFragment"
+            app:destination="@id/cargaPlantillasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/datosPartidosFragment"
+        android:name="com.franlinares.app.Partido.DatosPartidosFragment"
+        android:label="Datos Partido"
+        tools:layout="@layout/fragment_datos_partidos" >
+        <action
+            android:id="@+id/action_datosPartidosFragment_to_partidoFragment"
+            app:destination="@id/partidoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/partidoFragment"
+        android:name="com.franlinares.app.Partido.PartidoFragment"
+        android:label="Partido"
+        tools:layout="@layout/fragment_partido" />
+</navigation>

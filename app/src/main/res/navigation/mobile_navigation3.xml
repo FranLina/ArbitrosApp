@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/elegirLigaFragment2">
+    <fragment
+        android:id="@+id/elegirLigaFragment2"
+        android:name="com.franlinares.app.Estadisticas.ElegirLigaFragment"
+        android:label="Elegir Liga"
+        tools:layout="@layout/fragment_elegir_liga" >
+        <action
+            android:id="@+id/action_elegirLigaFragment2_to_cargarJornadasLigaFragment"
+            app:destination="@id/cargarJornadasLigaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cargarJornadasLigaFragment"
+        android:name="com.franlinares.app.Estadisticas.CargarJornadasLigaFragment"
+        android:label="Jornadas" >
+        <action
+            android:id="@+id/action_cargarJornadasLigaFragment_to_cargaPartidoActivity"
+            app:destination="@id/cargaPartidoActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/cargaPartidoActivity"
+        android:name="com.franlinares.app.Estadisticas.CargaPartidoActivity"
+        android:label="Partido"
+        tools:layout="@layout/activity_carga_partido" />
+</navigation>

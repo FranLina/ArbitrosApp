@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Titulo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="200sp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Nombre"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:background="#393939"
+        android:gravity="center"
+        android:text="Dorsal"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Puntos"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:background="#393939"
+        android:gravity="center"
+        android:text="TC 2P"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="TC 3P"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:background="#393939"
+        android:gravity="center"
+        android:text="TL"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="REB OFE"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:background="#393939"
+        android:gravity="center"
+        android:text="REB DEF"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="ASI"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:background="#393939"
+        android:gravity="center"
+        android:text="REC"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="PÉR"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:background="#393939"
+        android:gravity="center"
+        android:text="TAP COM"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="TAP REC"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:background="#393939"
+        android:gravity="center"
+        android:text="FAL"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="VAL"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+</TableRow>
